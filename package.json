@@ -1,0 +1,55 @@
+{
+  "name": "@markai/mark-segmented-button",
+  "version": "0.0.0-development",
+  "description": "Material Design Segmented Button",
+  "main": "mark-segmented-button.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc",
+    "semantic-release": "semantic-release",
+    "publish": "tsc && semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:marksolutions/mark-segmented-button.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marksolutions/mark-segmented-button/issues"
+  },
+  "homepage": "https://github.com/marksolutions/mark-segmented-button",
+  "author": {
+    "name": "Hiten Bhayani",
+    "email": "hitenbhayani41@gmail.com",
+    "url": "https://github.com/bhi10"
+  },
+  "license": "MIT",
+  "keywords": [
+    "lit",
+    "segmented",
+    "button"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "lit": "^2.8.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.3",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      {
+        "name": "feature/*",
+        "prerelease": "${name.replace(/^feature\\//g, \"\")}",
+        "channel": "${name.replace(/^feature\\//g, \"\")}"
+      }
+    ]
+  }
+}
