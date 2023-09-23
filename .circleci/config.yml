@@ -25,7 +25,6 @@ jobs:
           name: Deploy
           command: npx semantic-release
 
-
 workflows:
   version: 2
   release:
@@ -39,6 +38,6 @@ workflows:
       - release:
           context: Mark
           filters:
-              branches:
-                only:
-                  - main
+            branches:
+              only:
+                - main
