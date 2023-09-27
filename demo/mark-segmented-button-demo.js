@@ -1,5 +1,5 @@
-import { LitElement, html, css } from 'lit';
-import '../src/mark-segmented-button';
+import { LitElement, html, css } from "lit";
+import "../src/mark-segmented-button";
 
 export class MarkSegmentedButtonDemo extends LitElement {
   static styles = [
@@ -7,11 +7,11 @@ export class MarkSegmentedButtonDemo extends LitElement {
       :host {
         display: block;
       }
-    `
+    `,
   ];
 
   render() {
     return html`<mark-segmented-button></mark-segmented-button>`;
   }
 }
-customElements.define('mark-segmented-button-demo', MarkSegmentedButtonDemo);
+customElements.define("mark-segmented-button-demo", MarkSegmentedButtonDemo);
